@@ -1,0 +1,16 @@
+.card {
+   width: 15rem;
+}
+
+div.scrollmenu {
+    background-color: #ffffff;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+
+img.card-img-top {
+    width: auto;
+    height: 15rem;
+    object-fit: cover; 
+}
