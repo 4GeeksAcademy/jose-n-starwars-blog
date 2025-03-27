@@ -46,6 +46,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					}
 
 					let data = await result.json();
+					//Crear funcion para agregar nombre del planeta hogar desde un fetch nuevo
 					setStore({...getStore(),currentObj:data.result});
 					console(getStore().currentObj);
 

@@ -17,20 +17,13 @@ export const Home = () => {
 			navigate("./moreinfo");
 
 		} catch (error) {
-			console.error(error)
-			
+			console.error(error)		
 		}
-
 	}
-
 	useEffect(()=>{
 		actions.getCaracteres();
 			
 	}, []);
-
-	
-	
-
 
 	return (
 	<div className="container-fluid d-flex flex-column">
@@ -44,7 +37,7 @@ export const Home = () => {
   						<div className="card-body">
     						<h5 className="card-title">{caracter.name}</h5>
 							<div className="d-flex flex-row justify-content-between">
-								<button className="btn btn-info me-1">More Info</button>
+								<button className="btn btn-info me-1" onClick={()=> handleMoreInfo(caracter.url)}>More Info</button>
 								<button className="btn btn-warning ms-1">Like</button>
 							</div>
 
